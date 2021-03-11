@@ -1,0 +1,23 @@
+{
+	"name": "store-pro-mern",
+	"version": "1.0.0",
+	"description": "MERN Shopping Cart",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node backend/server"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/BingShawLim/store-pro-mern.git"
+	},
+	"author": "Bing Shaw Lim",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/BingShawLim/store-pro-mern/issues"
+	},
+	"homepage": "https://github.com/BingShawLim/store-pro-mern#readme",
+	"dependencies": {
+		"express": "^4.17.1"
+	}
+}

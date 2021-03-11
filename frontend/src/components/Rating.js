@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Rating = ({ value, text, color }) => {
+const Rating = ({ value, reviews, color }) => {
 	return (
 		<div>
 			<span>
@@ -61,13 +61,15 @@ const Rating = ({ value, text, color }) => {
 							: 'far fa-star'
 					}></i>
 			</span>
-			<span>{text && text}</span>
+			<span>
+				{reviews === 0 ? '' : reviews === 1 ? '1 review' : `${reviews} reviews`}
+			</span>
 		</div>
 	);
 };
 
 Rating.defaultProps = {
-	color: 'ffff00',
+	color: '#ffff00',
 };
 
 Rating.propTypes = {
